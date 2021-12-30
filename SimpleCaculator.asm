@@ -9,6 +9,8 @@ includelib \masm32\lib\masm32.lib
 
 .data
 	mode	db "1. Cong", 0Ah, "2. Tru", 0Ah, "3. Nhan", 0Ah, "4. Chia", 0
+	s1		db "Num 1: ", 0
+	s2		db "Num 2: ", 0
 	mode1	db " + ", 0
 	mode2	db " - ", 0
 	mode3	db " * ", 0
@@ -40,6 +42,8 @@ main PROC
 	call	atoi
 	mov		n, eax					;string to int
 
+	push	offset s1
+	call	StdOut
 	push	30
 	push	offset num1
 	call	StdIn
@@ -47,6 +51,8 @@ main PROC
 	call	atoi
 	mov		n1, eax
 
+	push	offset s2
+	call	StdOut
 	push	30
 	push	offset num2
 	call	StdIn
