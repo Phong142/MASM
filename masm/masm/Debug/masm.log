@@ -1,0 +1,3 @@
+﻿  Assembling HelloPEB.asm...
+HelloPEB.obj : warning LNK4258: directive '/ENTRY:main@0' not compatible with switch '/ENTRY:main'; ignored
+  masm.vcxproj -> C:\Users\Foq\source\repos\masm\Debug\masm.exe
